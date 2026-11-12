@@ -86,6 +86,9 @@ h2 { font-size: 1.3rem; margin: 32px 0 8px; }
   color: #ffffff;
   font-weight: 600;
 }
+/* Đã lên kho: cùng viên thuốc, thành liên kết tới trang App Store (package.json → APP_STORE_URL). */
+a.store-note { text-decoration: none; }
+a.store-note:hover, a.store-note:focus-visible { background: var(--brand-deep); }
 
 .shots {
   display: flex;
