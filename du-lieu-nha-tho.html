@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+<!-- Trang viết tay cho nghĩa vụ ODbL của "Nhà thờ quanh đây" (1.1 (22)); render_package.py không sinh và không ghi đè
+     trang nầy. File dữ liệu: du-lieu/churches_osm.json, chép nguyên từ TuDienKinhThanh/Resources/churches_osm.json
+     (dựng bằng Scripts/build_churches.py). Khi file trong app đổi, chép lại và sửa ngày, số lượng, SHA-256 bên dưới. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Dữ liệu nhà thờ · Church data — Từ Điển Kinh Thánh</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon.png">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Từ Điển Kinh Thánh</a>
+  <nav>
+    <a href="support.html">Hỗ trợ</a>
+    <a href="#en">English</a>
+    <a href="privacy.html">Quyền riêng tư</a>
+  </nav>
+</header>
+<main>
+  <section lang="vi">
+    <h1>Dữ liệu nhà thờ (OpenStreetMap, ODbL)</h1>
+    <p class="updated">Cập nhật lần cuối: 26/11/2026</p>
+
+    <p class="summary">Tính năng "Nhà thờ quanh đây" trong ứng dụng dùng một cơ sở dữ liệu dẫn xuất từ OpenStreetMap. Theo
+    giấy phép Open Database License, cơ sở dữ liệu ấy được công bố tại đây để ai cũng tải về và dùng lại được.</p>
+
+    <h2>Tải về</h2>
+    <ul>
+      <li><a href="du-lieu/churches_osm.json" download>churches_osm.json</a> (JSON, UTF-8, khoảng 150 KB): 1.355 nơi thờ
+        phượng Ki-tô giáo ở Việt Nam, mỗi nơi có mã OpenStreetMap, tên, toạ độ, nhóm (Công giáo, Tin Lành, khác, chưa rõ),
+        và khi có thì giờ lễ, website, trang Facebook, điện thoại đúng như người đóng góp đã ghi.</li>
+      <li>SHA-256: <code>7c5496cd55d32442bd301011ee8decabf24a700a9d0b45ac9177b10fa80648d9</code></li>
+      <li>Dữ liệu OpenStreetMap lấy ngày 25/11/2026 (bản OSM lúc 10:40 UTC).</li>
+    </ul>
+
+    <h2>Giấy phép</h2>
+    <p>© OpenStreetMap contributors. Cơ sở dữ liệu nầy được cung cấp theo
+      <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) 1.0</a>. Mọi quyền đối với
+      từng nội dung riêng trong cơ sở dữ liệu được cấp theo
+      <a href="https://opendatacommons.org/licenses/dbcl/1-0/">Database Contents License (DbCL) 1.0</a>.
+      Xem thêm: <a href="https://www.openstreetmap.org/copyright">openstreetmap.org/copyright</a>.</p>
+    <p>Bạn được chép, phân phối, dùng và sửa đổi cơ sở dữ liệu nầy, với điều kiện ghi công OpenStreetMap contributors,
+      giữ nguyên giấy phép ODbL cho cơ sở dữ liệu dẫn xuất, và công bố cơ sở dữ liệu dẫn xuất ấy nếu bạn dùng nó công khai.</p>
+
+    <h2>Đã thay đổi gì so với OpenStreetMap</h2>
+    <ul>
+      <li>Lấy các đối tượng <code>amenity=place_of_worship</code> có <code>religion=christian</code> trong Việt Nam.</li>
+      <li>Bỏ đối tượng có tên chùa, miếu, đình, thánh thất hay nhà riêng; gộp hai đối tượng cùng tên cách nhau trong 150 m.</li>
+      <li>Xếp nhóm theo tag <code>denomination</code>, hoặc theo tên khi tag trống.</li>
+      <li>Chỉ giữ giờ lễ có con số; bỏ đường link tới tên miền của các nước bị Mỹ cấm vận toàn diện và tới các trang tổng
+        hợp giờ lễ có bản quyền; chuẩn hoá dạng link Facebook.</li>
+      <li>Toạ độ làm tròn 5 chữ số thập phân.</li>
+    </ul>
+    <p>Thấy chỗ chưa đúng? Hãy sửa thẳng trên <a href="https://www.openstreetmap.org/">OpenStreetMap</a>; bản sau của ứng
+      dụng sẽ lấy lại dữ liệu mới.</p>
+
+    <h2>Nguồn khác trong ứng dụng</h2>
+    <p>Ứng dụng còn dùng một tệp riêng từ Overture Maps Foundation (bản 2026-11-18.0, giấy phép Community Data License
+      Agreement Permissive 2.0). Tệp ấy không trộn với dữ liệu OpenStreetMap ở trên và không thuộc trang nầy.</p>
+  </section>
+
+  <section lang="en" id="en">
+    <h1>Church data (OpenStreetMap, ODbL)</h1>
+    <p class="updated">Last updated: 2026-11-26</p>
+
+    <p class="summary">The app's "Nhà thờ quanh đây" (Churches nearby) feature uses a database derived from
+    OpenStreetMap. As the Open Database License requires, that database is published here for anyone to download and reuse.</p>
+
+    <h2>Download</h2>
+    <ul>
+      <li><a href="du-lieu/churches_osm.json" download>churches_osm.json</a> (JSON, UTF-8, about 150 KB): 1,355 Christian
+        places of worship in Vietnam with OpenStreetMap id, name, coordinates, group, and, where present, service
+        times, website, Facebook page and phone exactly as contributors entered them.</li>
+      <li>SHA-256: <code>7c5496cd55d32442bd301011ee8decabf24a700a9d0b45ac9177b10fa80648d9</code></li>
+      <li>OpenStreetMap data retrieved 2026-11-25 (OSM state 10:40 UTC).</li>
+    </ul>
+
+    <h2>Licence</h2>
+    <p>© OpenStreetMap contributors. This database is made available under the
+      <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) 1.0</a>. Any rights in
+      individual contents of the database are licensed under the
+      <a href="https://opendatacommons.org/licenses/dbcl/1-0/">Database Contents License (DbCL) 1.0</a>.
+      See <a href="https://www.openstreetmap.org/copyright">openstreetmap.org/copyright</a>.</p>
+
+    <h2>Changes from OpenStreetMap</h2>
+    <ul>
+      <li>Selected <code>amenity=place_of_worship</code> with <code>religion=christian</code> within Vietnam.</li>
+      <li>Dropped objects named as pagodas, temples, Cao Đài halls or private houses; merged objects of the same name within 150 m.</li>
+      <li>Grouped by the <code>denomination</code> tag, or by name when the tag is empty.</li>
+      <li>Kept service times only when they contain a digit; removed links to domains of countries under comprehensive
+        US sanctions and to copyrighted mass-times aggregators; normalised Facebook links.</li>
+      <li>Coordinates rounded to 5 decimal places.</li>
+    </ul>
+    <p>Other data in the app, from Overture Maps Foundation (release 2026-11-18.0, CDLA Permissive 2.0), is a separate
+      file, not combined with this database, and not part of this page.</p>
+  </section>
+</main>
+<footer>
+  <p>Cập nhật lần cuối / Last updated: 26/11/2026 (2026-11-26) · © 2026 Dương Long Hồ ·
+    <a href="./">Trang chủ</a> · <a href="privacy.html">Quyền riêng tư</a></p>
+</footer>
+</body>
+</html>
