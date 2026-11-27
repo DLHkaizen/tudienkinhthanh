@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi">
 <!-- Trang viết tay cho nghĩa vụ ODbL của "Nhà thờ quanh đây" (1.1 (22)); render_package.py không sinh và không ghi đè
-     trang nầy. File dữ liệu: du-lieu/churches_osm.json, chép nguyên từ TuDienKinhThanh/Resources/churches_osm.json
+     trang nầy. File dữ liệu: du-lieu/churches_osm.json và du-lieu/church_places.json, chép nguyên từ TuDienKinhThanh/Resources/churches_osm.json
      (dựng bằng Scripts/build_churches.py). Khi file trong app đổi, chép lại và sửa ngày, số lượng, SHA-256 bên dưới. -->
 <head>
 <meta charset="utf-8">
@@ -25,7 +25,7 @@
     <h1>Dữ liệu nhà thờ (OpenStreetMap, ODbL)</h1>
     <p class="updated">Cập nhật lần cuối: 26/11/2026</p>
 
-    <p class="summary">Tính năng "Nhà thờ quanh đây" trong ứng dụng dùng một cơ sở dữ liệu dẫn xuất từ OpenStreetMap. Theo
+    <p class="summary">Tính năng "Nhà thờ quanh đây" trong ứng dụng dùng hai cơ sở dữ liệu dẫn xuất từ OpenStreetMap (nhà thờ, và thành phố/thị trấn để chọn nơi). Theo
     giấy phép Open Database License, cơ sở dữ liệu ấy được công bố tại đây để ai cũng tải về và dùng lại được.</p>
 
     <h2>Tải về</h2>
@@ -35,6 +35,11 @@
         và khi có thì giờ lễ, website, trang Facebook, điện thoại đúng như người đóng góp đã ghi.</li>
       <li>SHA-256: <code>7c5496cd55d32442bd301011ee8decabf24a700a9d0b45ac9177b10fa80648d9</code></li>
       <li>Dữ liệu OpenStreetMap lấy ngày 25/11/2026 (bản OSM lúc 10:40 UTC).</li>
+      <li><a href="du-lieu/church_places.json" download>church_places.json</a> (JSON, UTF-8, khoảng 80 KB): 1.413 thành
+        phố, thị xã, thị trấn ở Việt Nam (place=city/town) với tên và toạ độ, dùng cho ô "Tìm nơi khác"; nơi trùng tên có
+        thêm tỉnh lỵ gần nhất.</li>
+      <li>SHA-256: <code>c89f66d3616f0af3d7d152b089f7446ba06e4ad8080d688c6ae54b3029017548</code></li>
+      <li>Dữ liệu OpenStreetMap lấy ngày 27/11/2026.</li>
     </ul>
 
     <h2>Giấy phép</h2>
@@ -77,6 +82,11 @@
         times, website, Facebook page and phone exactly as contributors entered them.</li>
       <li>SHA-256: <code>7c5496cd55d32442bd301011ee8decabf24a700a9d0b45ac9177b10fa80648d9</code></li>
       <li>OpenStreetMap data retrieved 2026-11-25 (OSM state 10:40 UTC).</li>
+      <li><a href="du-lieu/church_places.json" download>church_places.json</a> (JSON, UTF-8, about 80 KB): 1,413 cities
+        and towns in Vietnam (place=city/town) with name and coordinates, for "Tìm nơi khác" (find another place); places
+        sharing a name also carry the nearest provincial capital.</li>
+      <li>SHA-256: <code>c89f66d3616f0af3d7d152b089f7446ba06e4ad8080d688c6ae54b3029017548</code></li>
+      <li>OpenStreetMap data retrieved 2026-11-27.</li>
     </ul>
 
     <h2>Licence</h2>
